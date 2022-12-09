@@ -1,8 +1,12 @@
+import { RouterProvider } from 'react-router-dom';
 import './App.css';
-import Portfolio from './CSS/Portfolio';
+import router from './Routes/MainRouter';
 
 function App() {
-  return <Portfolio></Portfolio>;
+
+  return (
+    <RouterProvider router={router}></RouterProvider>
+  );
 }
 
 export default App;
