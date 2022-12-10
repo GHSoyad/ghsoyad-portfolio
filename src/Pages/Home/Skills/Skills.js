@@ -20,22 +20,20 @@ const Skills = () => {
     ]
 
     return (
-        <div>
-            <div className='container mx-auto max-w-screen-xl px-4 lg:px-0 my-8'>
-                <div className='divider w-1/2 mx-auto before:bg-primary after:bg-primary before:h-0.5'>
-                    <h3 className='font-bold text-4xl text-center pb-2'>My Skills</h3>
-                </div>
-                <div className='flex gap-5 cursor-default flex-wrap text-xl font-bold mt-16'>
-                    {
-                        skills.map(skill => (
-                            <div key={skill.name} className='flex flex-auto items-center justify-center gap-2 px-4 py-2 rounded max-w-xs border-2 border-primary shadow-md hover:shadow-xl'>
-                                <img src={skill.image} alt="" className='w-10' />
-                                <p>{skill.name}</p>
-                            </div>
-                        ))
-                    }
+        <div id='skills' className='container mx-auto max-w-screen-xl px-4 xl:px-0 py-8'>
+            <div className='divider w-full md:w-1/2 mx-auto before:bg-primary after:bg-primary before:h-0.5'>
+                <h3 className='font-bold text-3xl md:text-4xl text-center pb-2'>My Skills</h3>
+            </div>
+            <div className='flex gap-5 cursor-default flex-wrap justify-center text-xl font-bold mt-10 md:mt-16'>
+                {
+                    skills.map(skill => (
+                        <div key={skill.name} className='flex flex-auto items-center justify-center gap-2 px-4 py-2 rounded max-w-xs border-2 border-primary shadow-md hover:shadow-xl'>
+                            <img src={skill.image} alt="" className='w-10' />
+                            <p>{skill.name}</p>
+                        </div>
+                    ))
+                }
 
-                </div>
             </div>
         </div>
     );
