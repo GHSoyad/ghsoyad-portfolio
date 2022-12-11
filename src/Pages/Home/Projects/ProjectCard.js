@@ -7,7 +7,7 @@ const ProjectCard = ({ project }) => {
     return (
         <div className="card card-compact transition-opacity bg-primary-focus/10 shadow-md hover:shadow-xl">
             <figure><img src={thumb} alt={title} className='w-full max-h-60 object-cover object-top' /></figure>
-            <div className="card-body gap-4">
+            <div className="card-body gap-4 bg-[#ece6fa]">
                 <h2 className='text-2xl font-medium'>{title}</h2>
                 <p className='text-lg'>{description}</p>
                 <p><span className='font-bold'>Technology: </span>{tech}</p>

@@ -3,7 +3,7 @@ import image from '../../../Assets/images/devImage.png';
 
 const HeroBanner = () => {
     return (
-        <div id='about' className='container mx-auto max-w-screen-lg px-4 lg:px-0 py-8 md:flex items-center'>
+        <section id='about' className='container mx-auto max-w-screen-lg px-4 lg:px-0 py-8 md:flex items-center'>
             <div className='md:w-4/6 md:pr-20 flex flex-col gap-4 text-center md:text-justify'>
                 <h1 className='font-bold text-3xl'>Hello, I am<br></br> Golam Hasnain Soyad</h1>
                 <h3 className='font-bold text-4xl'>Frontend Developer</h3>
@@ -15,7 +15,7 @@ const HeroBanner = () => {
             <div className='md:w-2/6 mt-12 md:mt-0'>
                 <img src={image} alt="" className='mx-auto rounded-full border-none ring ring-primary' />
             </div>
-        </div>
+        </section>
     );
 };
 

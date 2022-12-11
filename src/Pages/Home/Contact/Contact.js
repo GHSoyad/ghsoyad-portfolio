@@ -23,7 +23,7 @@ const Contact = () => {
     };
 
     return (
-        <div id='contact' className='container mx-auto max-w-screen-xl px-4 xl:px-0 py-8'>
+        <section id='contact' className='container mx-auto max-w-screen-xl px-4 xl:px-0 py-8'>
             <div className='divider w-full md:w-1/2 mx-auto before:bg-primary after:bg-primary before:h-0.5'>
                 <h3 className='font-bold text-3xl md:text-4xl text-center pb-2'>Contact Me</h3>
             </div>
@@ -54,12 +54,12 @@ const Contact = () => {
                             </form>
                         </div>
                     </div>
-                    <div className='hidden md:block w-1/2'>
+                    <div className='hidden md:block w-1/2 bg-[#ece6fa]'>
                         <Lottie animationData={animation} loop={true} />
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

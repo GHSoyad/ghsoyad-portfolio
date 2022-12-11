@@ -10,7 +10,7 @@ const Navbar = () => {
     </>
 
     return (
-        <div className="bg-white/90 z-50 sticky top-0">
+        <nav className="bg-white/90 z-50 sticky top-0">
             <div className="navbar justify-between container mx-auto max-w-screen-lg font-semibold text-primary sticky top-0">
                 <Link to='/' className="max-w-[200px] mr-4"><img src='' alt="" className='w-full rounded' /></Link>
                 <div className='flex gap-1'>
@@ -29,7 +29,7 @@ const Navbar = () => {
                     </ul>
                 </div>
             </div>
-        </div>
+        </nav>
     );
 };
 
