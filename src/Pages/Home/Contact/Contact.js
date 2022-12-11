@@ -2,7 +2,7 @@ import React from 'react';
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser'
 import { toast } from 'react-hot-toast';
-import animation from '../../../Assets/lottie/MnttK5CWi5.json';
+import contactLottie from '../../../Assets/lottie/contact.json';
 import Lottie from "lottie-react";
 
 
@@ -55,7 +55,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className='hidden md:block w-1/2 bg-[#ece6fa]'>
-                        <Lottie animationData={animation} loop={true} />
+                        <Lottie animationData={JSON.parse(JSON.stringify(contactLottie))} loop={true} />
                     </div>
                 </div>
             </div>
