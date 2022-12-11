@@ -7,7 +7,7 @@ const FeaturedProjects = () => {
 
     const [projects, setProjects] = useState([]);
     useEffect(() => {
-        fetch('projects.json')
+        fetch('featuredProjects.json')
             .then(res => res.json())
             .then(data => setProjects(data))
             .catch(error => console.log(error))
@@ -19,7 +19,7 @@ const FeaturedProjects = () => {
                 <h3 className='font-bold text-3xl md:text-4xl text-center pb-2'>My Projects</h3>
             </div>
 
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 md:mt-16'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 md:mt-14'>
                 {
                     projects.map(project => <ProjectCard key={project.title} project={project}></ProjectCard>)
                 }
