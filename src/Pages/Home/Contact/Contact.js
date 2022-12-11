@@ -28,7 +28,7 @@ const Contact = () => {
                 <h3 className='font-bold text-2xl md:text-4xl text-center pb-2'>Contact Me</h3>
             </div>
             <div className='bg-primary-focus/10 rounded-lg'>
-                <div className='flex justify-center items-center max-w-screen-lg mx-auto mt-10 md:mt-14'>
+                <div className='md:flex justify-center items-center max-w-screen-lg mx-auto mt-10 md:mt-14'>
                     <div className='w-full md:w-1/2 relative'>
                         <div className='w-full mx-auto p-4 md:p-8 rounded-lg md:rounded-r-none'>
                             <form ref={form} onSubmit={sendEmail}>
@@ -54,7 +54,7 @@ const Contact = () => {
                             </form>
                         </div>
                     </div>
-                    <div className='hidden md:block w-1/2 bg-[#ece6fa]'>
+                    <div className='w-full md:w-1/2 bg-[#ece6fa]'>
                         <Lottie animationData={JSON.parse(JSON.stringify(contactLottie))} loop={true} />
                     </div>
                 </div>

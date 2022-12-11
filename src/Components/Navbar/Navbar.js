@@ -3,7 +3,8 @@ import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     const menuLinks = <>
-        <li><NavLink to='/'>About</NavLink></li>
+        <li><NavLink to='/'>Home</NavLink></li>
+        <li><NavLink to='/about'>About</NavLink></li>
         <li><NavLink to='/projects'>Projects</NavLink></li>
         <li><NavLink to='/skills'>Skills</NavLink></li>
         <li><NavLink to='/blogs'>Blogs</NavLink></li>
@@ -12,7 +13,7 @@ const Navbar = () => {
 
     return (
         <nav className="bg-white/90 z-50 sticky top-0">
-            <div className="navbar justify-between container mx-auto max-w-screen-lg font-semibold text-primary sticky top-0">
+            <div className="navbar justify-between container mx-auto max-w-screen-xl font-semibold text-primary sticky top-0">
                 <Link to='/' className="max-w-[200px] mr-4"><img src='' alt="" className='w-full rounded' /></Link>
                 <div className='flex gap-1'>
                     <div className="dropdown dropdown-end">

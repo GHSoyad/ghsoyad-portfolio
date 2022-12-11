@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Blogs from "../Pages/Blogs/Blogs";
+import About from "../Pages/Home/About/About";
 import Contact from "../Pages/Home/Contact/Contact";
 import Home from "../Pages/Home/Home/Home";
 import Skills from "../Pages/Home/Skills/Skills";
@@ -17,13 +18,17 @@ const router = createBrowserRouter([
                 element: <Home></Home>
             },
             {
+                path: '/about',
+                element: <About></About>
+            },
+            {
                 path: '/projects',
                 element: <Projects></Projects>
             },
             {
                 path: '/project/:name',
                 element: <ProjectDetail></ProjectDetail>,
-                loader: ({ params }) => fetch(`http://localhost:5000/project/${params.name}`)
+                loader: ({ params }) => fetch(`https://ghsoyad-portfolio-server.vercel.app/project/${params.name}`)
             },
             {
                 path: '/skills',
