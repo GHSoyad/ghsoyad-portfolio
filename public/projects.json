@@ -1,0 +1,66 @@
+[
+    {
+        "title": "Cadence Watches",
+        "slug": "Cadence-Watches",
+        "description": "An online watch reselling shop",
+        "thumb": "https://i.ibb.co/YjRnXFh/cadence-watches-thumbnail.png",
+        "img": "https://i.ibb.co/424s2nr/cadence-watches.png",
+        "tech": "ReactJS, Tailwind CSS, daisy UI, NodeJS, ExpressJS, MongoDB, JWT, Stripe, Firebase, Vercel",
+        "live": "https://cadence-watches.web.app/",
+        "client": "https://github.com/GHSoyad/cadence-watches-client",
+        "server": "https://github.com/GHSoyad/cadence-watches-server",
+        "images": [
+            "https://i.ibb.co/Fnmq3Vj/cadence-watches-admin.png",
+            "https://i.ibb.co/M2DLy05/cadence-watches-products.png"
+        ],
+        "features": [
+            "React router with navigation, redirection and private routing based on user role",
+            "Firebase authentication, email sign-up, google sign-in and JWT secure authorization",
+            "Admin can delete buyer and seller, and make seller verified",
+            "Sellers can add products, delete or advertise their products",
+            "Buyers can order and delete products, Make payments with Stripe"
+        ]
+    },
+    {
+        "title": "Smiley Dental Services",
+        "slug": "Smiley-Dental-Services",
+        "description": "A dental service review website",
+        "thumb": "https://i.ibb.co/pfbjJZm/smiley-dental-services-thumbnail.png",
+        "img": "https://i.ibb.co/0CdY7fM/smiley-dental-services.png",
+        "tech": "ReactJS, Tailwind CSS, daisy UI, NodeJS, ExpressJS, MongoDB, JWT, Firebase, Vercel",
+        "live": "https://smiley-dental-services.web.app/",
+        "client": "https://github.com/GHSoyad/smiley-dental-services-client",
+        "server": "https://github.com/GHSoyad/smiley-dental-services-server",
+        "images": [
+            "https://i.ibb.co/NxwfkNL/smiley-dental-reviews.png",
+            "https://i.ibb.co/d6Y0hQf/smiley-dental-service.png"
+        ],
+        "features": [
+            "React router with navigation, redirection and private routing for logged-in users",
+            "Firebase authentication, email sign-up, google sign-in and JWT secure authorization",
+            "Users can choose a service and see other users review or login to write a review",
+            "Users can delete or edit their own reviews from My reviews page and add a service"
+        ]
+    },
+    {
+        "title": "Bright Fort",
+        "slug": "Bright-Fort",
+        "description": "An online learning platform",
+        "thumb": "https://i.ibb.co/tJ2dGtS/bright-fort-thumbnail.png",
+        "img": "https://i.ibb.co/PzVyDGt/bright-fort.png",
+        "tech": "ReactJS, Tailwind CSS, daisy UI, NodeJS, ExpressJS, Firebase, Vercel",
+        "live": "https://bright-fort.web.app/",
+        "client": "https://github.com/GHSoyad/bright-fort-client",
+        "server": "https://github.com/GHSoyad/bright-fort-server",
+        "images": [
+            "https://i.ibb.co/kDjH8qC/bright-fort-course.png",
+            "https://i.ibb.co/gd4TF42/bright-fort-courses.png"
+        ],
+        "features": [
+            "React router with navigation, redirection and private routing for logged-in users",
+            "Dynamic courses page with course category",
+            "Dynamic course details page with course page download",
+            "Firebase authentication, email sign-up, google sign-in"
+        ]
+    }
+]

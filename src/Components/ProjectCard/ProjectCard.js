@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const ProjectCard = ({ project }) => {
 
-    const { title, description, thumb, tech, live } = project
+    const { title, slug, description, thumb, tech, live } = project
 
     return (
         <div className="card card-compact transition-opacity bg-primary-focus/10 shadow-md hover:shadow-xl">
@@ -13,7 +13,7 @@ const ProjectCard = ({ project }) => {
                 <p className='text-lg'>{description}</p>
                 <p><span className='font-bold'>Technology: </span>{tech}</p>
                 <div className="flex gap-4">
-                    <Link to={`/project/${title}`} className="inline-block rounded px-6 py-3 pt-3.5 text-sm text-white font-bold bg-primary hover:bg-primary-focus">View Details</Link>
+                    <Link to={`/project/${slug}`} className="inline-block rounded px-6 py-3 pt-3.5 text-sm text-white font-bold bg-primary hover:bg-primary-focus">View Details</Link>
                     <a href={live} target='_blank' rel='noreferrer' className="inline-block rounded px-6 py-3 text-sm text-primary font-bold bg-white border-2 border-primary hover:bg-primary hover:text-white">Live Site</a>
                 </div>
             </div>

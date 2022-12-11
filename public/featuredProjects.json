@@ -1,6 +1,7 @@
 [
     {
         "title": "Cadence Watches",
+        "slug": "Cadence-Watches",
         "description": "An online watch reselling shop",
         "thumb": "https://i.ibb.co/YjRnXFh/cadence-watches-thumbnail.png",
         "img": "https://i.ibb.co/424s2nr/cadence-watches.png",
@@ -9,6 +10,7 @@
     },
     {
         "title": "Smiley Dental Services",
+        "slug": "Smiley-Dental-Services",
         "description": "A dental service review website",
         "thumb": "https://i.ibb.co/pfbjJZm/smiley-dental-services-thumbnail.png",
         "img": "https://i.ibb.co/0CdY7fM/smiley-dental-services.png",
@@ -17,6 +19,7 @@
     },
     {
         "title": "Bright Fort",
+        "slug": "Bright-Fort",
         "description": "An online learning platform",
         "thumb": "https://i.ibb.co/tJ2dGtS/bright-fort-thumbnail.png",
         "img": "https://i.ibb.co/PzVyDGt/bright-fort.png",
