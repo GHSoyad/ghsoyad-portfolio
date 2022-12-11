@@ -22,7 +22,7 @@ const Skills = () => {
     return (
         <section id='skills' className='container mx-auto max-w-screen-xl px-4 xl:px-0 py-8'>
             <div className='divider w-full md:w-1/2 mx-auto before:bg-primary after:bg-primary before:h-0.5'>
-                <h3 className='font-bold text-3xl md:text-4xl text-center pb-2'>My Skills</h3>
+                <h3 className='font-bold text-2xl md:text-4xl text-center pb-2'>My Skills</h3>
             </div>
             <div className='flex gap-5 cursor-default flex-wrap justify-center text-xl font-bold mt-10 md:mt-14'>
                 {

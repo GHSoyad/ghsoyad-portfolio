@@ -10,7 +10,7 @@ const ProjectDetail = () => {
     return (
         <section id='projects' className='container mx-auto max-w-screen-xl px-4 xl:px-0 py-8'>
             <div className='divider w-full md:w-1/2 mx-auto before:bg-primary after:bg-primary before:h-0.5'>
-                <h3 className='font-bold text-3xl md:text-4xl text-center pb-2'>{title}</h3>
+                <h3 className='font-bold text-2xl md:text-4xl text-center pb-2'>{title}</h3>
             </div>
             <div className='md:flex mt-10 md:mt-14 md:p-4 bg-[#ece6fa] rounded-lg'>
                 <div className='w-full md:w-2/3 flex flex-col gap-2 p-4'>
