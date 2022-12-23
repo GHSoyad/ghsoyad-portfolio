@@ -4,21 +4,29 @@ import emailjs from '@emailjs/browser'
 import { toast } from 'react-hot-toast';
 import contactLottie from '../../../Assets/lottie/contact.json';
 import Lottie from "lottie-react";
+import { useState } from 'react';
+import { RiSendPlaneFill } from 'react-icons/ri';
+import { FaSpinner } from 'react-icons/fa';
 
 
 const Contact = () => {
 
+    const [loading, setLoading] = useState(false);
     const form = useRef();
+
     const sendEmail = (e) => {
         e.preventDefault();
+        setLoading(true);
         emailjs.sendForm(process.env.REACT_APP_emailServiceId, process.env.REACT_APP_emailTemplateId, form.current, process.env.REACT_APP_emailPublicKey)
             .then((result) => {
                 if (result.status === 200) {
                     toast.success('Message Sent!');
                     e.target.reset();
+                    setLoading(false);
                 }
             }, (error) => {
                 toast.error(error.text);
+                setLoading(false);
             });
     };
 
@@ -50,7 +58,12 @@ const Contact = () => {
                                     </label>
                                     <textarea className="textarea textarea-primary" name='message' placeholder="Message" required></textarea>
                                 </div>
-                                <button type='submit' className='btn btn-primary w-full mt-6'>Send</button>
+                                <button type='submit' className='btn btn-primary w-full mt-6'>
+                                    {
+                                        loading ? <><FaSpinner className='text-lg mr-2 animate-spin'></FaSpinner> Sending...</> :
+                                            <><RiSendPlaneFill className='text-lg mr-2'></RiSendPlaneFill> Send</>
+                                    }
+                                </button>
                             </form>
                         </div>
                     </div>

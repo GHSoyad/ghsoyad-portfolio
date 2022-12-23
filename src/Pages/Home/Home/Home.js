@@ -11,7 +11,7 @@ const Home = () => {
     return (
         <div className='relative'>
             <div className='fixed h-screen w-full'><Lottie animationData={JSON.parse(JSON.stringify(homeBGLottie))} loop={true}></Lottie></div>
-            <div className='min-h-screen py-2 md:py-16 flex flex-col gap-10 md:gap-20 relative'>
+            <div className='min-h-screen py-2 md:py-16 flex flex-col gap-10 md:gap-16 relative'>
                 <HeroBanner></HeroBanner>
                 <FeaturedProjects></FeaturedProjects>
                 <Skills></Skills>

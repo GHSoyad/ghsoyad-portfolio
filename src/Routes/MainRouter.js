@@ -28,7 +28,7 @@ const router = createBrowserRouter([
             {
                 path: '/project/:name',
                 element: <ProjectDetail></ProjectDetail>,
-                loader: ({ params }) => fetch(`https://ghsoyad-portfolio-server.vercel.app/project/${params.name}`)
+                loader: ({ params }) => params.name
             },
             {
                 path: '/skills',

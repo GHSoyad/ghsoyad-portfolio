@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import ProjectCard from '../../../Components/ProjectCard/ProjectCard';
 
 const FeaturedProjects = () => {
@@ -24,6 +25,7 @@ const FeaturedProjects = () => {
                     projects.map(project => <ProjectCard key={project.title} project={project}></ProjectCard>)
                 }
             </div>
+            <Link to='/projects' className='btn btn-primary btn-wide flex mt-10 mx-auto'>See All Projects</Link>
         </section>
     );
 };
